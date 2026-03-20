@@ -1,1 +1,1 @@
-# RIP_course
+# UID_course
