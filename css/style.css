@@ -1,8 +1,7 @@
 .mainPageBG {
     background: linear-gradient(#370404, #1D0000);
-    background-size:cover;
-    height:100vh;
-
+    background-size: cover;
+    min-height: 100vh;
 }
 header {
     display: flex;
@@ -13,11 +12,11 @@ header {
     cursor: pointer;
     background: linear-gradient(#6B0202, #200101);
     height: 80px;
-    width: 330px;
+    width: 15%;
     border: 1px solid;
     border-color: black;
     color: #B4B4B4;
-    font-size: 36px;
+    font-size: clamp(16px, 2vw, 32px);
     font-weight: 700;
     font-style: italic;
 }
@@ -25,7 +24,7 @@ header {
     display: flex;
     background: linear-gradient(#6B0202, #200101);
     height: 80px;
-    width: 820px;
+    width: 40%;
     border: 2px solid;
     justify-content: right;
     align-items: center;
