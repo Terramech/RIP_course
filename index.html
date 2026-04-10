@@ -30,26 +30,47 @@
                 <div class="flex justify-center">
                    <span class="title">Безумие Проект "Нексус"</span>
                    <span class="profileImage">
-                        <a href="">
-                            <span class="profileImage"><img src="images/avatarPlaceholder.png" alt="avatar"></span>
-                        </a>
+                    <button id="profileTrigger">
+                        <span class="profileImage"><img src="images/avatarPlaceholder.png" alt="avatar"></span>
+                    </button>
                     </span>
                 </div>
+                <div>
+                    <p class="mainPageIntroText">
+                        Добро пожаловать на википедию M:PN! 
+                        данный сайт является неоффициальным источниким информации об игре, 
+                        Madness:Project Nexus, 
+                        основанной на анимационном веб сериале "Madness Combat". 
+                        Любая информация на этом сайте может является не точной, 
+                        или вовсе не достоверной, 
+                        так-что не воспринимайте её как истину в последней инстанции. 
+                        Если у вас есть какая-либо информация, которая может быть полезной для других игроков, 
+                        или вы заметили какую-либо неточность, пожалуйста, не стесняйтесь поделиться ей с нами!
+                    </p>
+                </div>
                 <div class="mainPageBtnList">
-                    <button class="mainPageButton wikiBtn">Вики</button>
-                    <button class="mainPageButton">Обсуждения</button>
-                    <button class="mainPageButton">предпочтения</button>
+                    <button class="mainPageButton wikiBtn">перейти к вики</button>
                     <a href="https://store.steampowered.com/app/488860/MADNESS_Project_Nexus">
                     <button class="mainPageButton" style="border-color: #D40000;">Страница игры</button>
                     </a>
                 </div>
 
-                <div class="h-26"></div>
-        </div>
-    </div>
-    
-    <div>
 
+            <div class="profileOverlay" id="profileOverlayBlock">
+                <div class="profileContent">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div><img src="images/avatarPlaceholder.png" alt="avatar" class="profileAvatar">
+                            <p style="margin: 5px;">Аватар</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 20px;">
+                            <span class="profileUsername">Отображаемое имя</span>
+                            <span class="profileUsername">Имя пользователя</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
     <script src="index.js"></script>
 </body>
