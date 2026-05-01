@@ -14,7 +14,7 @@ try {
     let returnButton = document.querySelectorAll(".returnBtn")
     returnButton.forEach(function(button) {
         button.addEventListener("click", () => {
-            window.location.href = "index.html";
+            window.location.href = "../categories.html";
         });
     });
 
@@ -28,7 +28,6 @@ try {
         window.location.href = "wikipages/gamemodes.html"
     })
     }
-    
 
 //==
     // profile overlay code
@@ -44,7 +43,6 @@ try {
     profileButton.addEventListener('click', (e) => {
         profileOverlay.classList.add('active');
     });
-
 } catch (error) {
     console.log(error)
 }
