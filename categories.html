@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="index.js"></script>
-    
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <meta charset="UTF-8">
@@ -32,23 +30,36 @@
                     </div>
                     
                     <span class="profileImage">
-                        <a href="">
+                        <button id="profileTrigger">
                             <span class="profileImage"><img src="images/avatarPlaceholder.png" alt="avatar"></span>
-                        </a>
+                        </button>
                     </span>
                 </div>
                 <div class="categoryGrid">
-                    <button class="categoryBtn">Персонажи</button>
+                    <button class="categoryBtn characterPage">Персонажи</button>
                     <button class="categoryBtn">Арсенал</button>
                     <button class="categoryBtn">Происхождения</button>
                     <button class="categoryBtn">Сюжет и лор</button>
                     <button class="categoryBtn">Локации</button>
                     <button class="categoryBtn">Секреты</button>
-                    <button class="categoryBtn">Игровые режимы</button>
+                    <button class="categoryBtn gamemodesPage">Игровые режимы</button>
                     <button class="categoryBtn">Механики</button>
                     <button class="categoryBtn">другое</button>
                 </div>
             </div>
+            <div class="profileOverlay" id="profileOverlayCont">
+                <div class="profileContent">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div><img src="images/avatarPlaceholder.png" alt="avatar" class="profileAvatar">
+                            <p style="margin: 5px;">Аватар</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 20px;">
+                            <span class="profileUsername">Отображаемое имя</span>
+                            <span class="profileUsername">Имя пользователя</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 </body>
-
+        <script src="index.js"></script>
 </html>

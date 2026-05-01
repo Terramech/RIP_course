@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <title>Characters</title>
+
+</head>
+<body>
+    <div class="mainPageBG">
+            <header>
+                <form action=""></form>
+                <button class="buttonHeader">Предпочтения</button>
+                <button class="buttonHeader wikiBtn">Вики</button>
+                <button class="buttonHeader">Обсуждения</button>
+                <button class="buttonHeader">Поддержка</button>
+                <div class="headerSearch">
+                    <span class="headerSearchBar">
+                        <input type="search" placeholder="Поиск">
+                        <img src="../images/Group 4.png" alt="search" class="searchIcon">
+                    </span>
+                </div>
+            </header>
+
+                <div style="display: flex; flex-direction:row; justify-content:space-between" >
+                    <div>
+                        <a href="../categories.html"><button class="returnBtn">назад</button></a>
+                    </div>
+                    <div style="display: flex; justify-content:space-between; align-items:center; gap: 3vh">
+                        <button class="filterButton">Фильтр</button>
+                        <button class="filterButton">Сортировка</button>
+                        <div class="filterSearchBar">
+                            <input type="text" placeholder="поиск персонажей">
+                            <img src="../images/Group 4.png" alt="search" class="searchIconFilter">
+                        </div>
+                        <div>
+                            <span class="profileImage">
+                            <button id="profileTrigger">
+                                <span class="profileImage"><img src="../images/avatarPlaceholder.png" alt="avatar"></span>
+                            </button>
+                        </span>
+                        </div>   
+                    </div>
+                </div>
+                <div class="characterPageContent">
+                    <div class="characterListWrapper">
+                        <div class="characterList">
+                        </div>
+                    </div>
+                    <div class="characterInfoBlock">
+                        <div class="charInfoDescription"></div>
+                        <div class="charInfoSidebar">
+                            <div class="charInfoSidebarImg">
+                                
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+        </div>
+        <div class="profileOverlay" id="profileOverlayCont">
+                <div class="profileContent">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div><img src="images/avatarPlaceholder.png" alt="avatar" class="profileAvatar">
+                            <p style="margin: 5px;">Аватар</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 20px;">
+                            <span class="profileUsername">Отображаемое имя</span>
+                            <span class="profileUsername">Имя пользователя</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</body>
+    <script src="../index.js"></script>
+    <script src="../characterlist.js"></script>
+    <script src="charData.js"></script>
+</html>

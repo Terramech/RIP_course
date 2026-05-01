@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <title>Gamemodes</title>
+
+</head>
+<body>
+    <div class="mainPageBG">
+        <header>
+            <form action=""></form>
+            <button class="buttonHeader">Предпочтения</button>
+            <button class="buttonHeader wikiBtn">Вики</button>
+            <button class="buttonHeader">Обсуждения</button>
+            <button class="buttonHeader">Поддержка</button>
+            <div class="headerSearch">
+                <span class="headerSearchBar">
+                    <input type="search" placeholder="Поиск">
+                    <img src="../images/Group 4.png" alt="search" class="searchIcon">
+                </span>
+            </div>
+        </header>
+        <div>
+            
+            <a href="../categories.html"><button class="returnBtn">назад</button></a>
+        </div>
+        <h1 style="display:flex;justify-content: center;margin-top: 1vh; font-size: 15px; color:#656565">*Режим игры выбирается в главном меню</h1>
+        <h2 style="display: flex; justify-content: center;margin-top: 5vh; font-size: 40px; color: #898989">Cуществующие режимы игры</h2>
+        <div class="wikiModeSelection" id="gameModeSelection">
+            <div class="wikiModeBlock" id="storyModeBlock">
+                <div class="modeTitle">СЮЖЕТНЫЙ РЕЖИМ</div>
+                <div>
+                    <img src="../images/storyModeThumbnail.jpg" alt="modeScreenshot" class="wikiModeImage">
+                </div>
+                <div class="modeDescription"></div>
+                <div>
+                    <button class="wikiModeMoreBtn">Подробнее</button>
+                </div>
+            </div>
+            
+            <div class="wikiModeBlock" id="arenaModeBlock">
+                <div class="modeTitle">РЕЖИМ АРЕНЫ</div>
+                <div>
+                    <img src="../images/arenaOrigin.jpg" alt="modeScreenshot" class="wikiModeImage">
+                </div>
+                <div class="modeDescription"></div>
+                <div>
+                    <button class="wikiModeMoreBtn">Подробнее</button>
+                </div>
+            </div>
+            <div class="wikiModeBlock" id="arenaModeBlock">
+                <div class="modeTitle">ОБУЧЕНИЕ</div>
+                <div>
+                    <img src="../images/trainingMission.jpg" alt="modeScreenshot" class="wikiModeImage">
+                </div>
+                <div class="modeDescription"></div>
+                <div>
+                    <button class="wikiModeMoreBtn">Подробнее</button>
+                </div>
+            </div>
+            <div class="wikiModeBlock" id="arenaModeBlock">
+                <div class="modeTitle">ПЕСОЧНИЦА</div>
+                <div>
+                    <img src="../images/playground.jpg" alt="modeScreenshot" class="wikiModeImage">
+                </div>
+                <div class="modeDescription"></div>
+                <div>
+                    <button class="wikiModeMoreBtn">Подробнее</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="profileOverlay" id="profileOverlayCont">
+                <div class="profileContent">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div><img src="images/avatarPlaceholder.png" alt="avatar" class="profileAvatar">
+                            <p style="margin: 5px;">Аватар</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 20px;">
+                            <span class="profileUsername">Отображаемое имя</span>
+                            <span class="profileUsername">Имя пользователя</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+    <script src="index.js"></script>
+</html>

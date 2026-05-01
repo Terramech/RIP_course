@@ -64,42 +64,46 @@ header {
 }
 .title {
     display: flex;
-    max-width: 1400px;
-    font-size: 130px;
-    padding-top: 80px;
+    max-width: 1200px;
+    font-size: 100px;
+    padding-top: 40px;
     text-wrap: wrap;
     justify-content: center;
     font-weight: 900;
     font-style: italic;
     -webkit-text-stroke: 4px #AF0000;
     color: white;
-    line-height:100px;
+    line-height:80px;
     align-items: center;
     padding-left: 200px;
     margin-left: auto;
 }
 .mainPageIntroText {
+    background: linear-gradient(#3f0000, #180000);
+    border-radius: 20px;
+    border: #a30000 solid;
+    width: 1080px;
     display: flex;
     text-align: justify;
     padding-right: 20vh;
     font-size: 20px;
-    padding-top: 40px;
     text-wrap: wrap;
     justify-content: center;
     font-weight: 700;
     font-style: italic;
     color: #B4B4B4;
-    line-height: 40px;
+    line-height: 30px;
     align-items: center;
-    padding-left: 200px;
-    margin-left: auto;
+    padding: 40px;
+    margin:auto;
 }
 .mainPageBtnList {
+    justify-content: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    margin-top: 80px;
-    gap: 40px;
+    margin-top: 60px;
+    gap: 30vh;
 
 
 }
@@ -107,15 +111,15 @@ header {
     cursor: pointer;
     display: flex;
     background: linear-gradient(#3A0101, #550000);
-    width: 800px;
-    height: 110px;
+    width: 400px;
+    height: 80px;
     border-radius: 20px;
     border: 4px solid;
     justify-content: center;
     align-items: center;
     color: #B4B4B4;
     border-color: #8C0000;
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 700;
     font-style: italic;
     transition: transform 0.1s ease;
@@ -124,6 +128,7 @@ header {
 .mainPageButton:hover {
     transform: scale(1.08);
 }
+
 .profileImage {
     cursor: pointer;
     display: flex;
@@ -139,8 +144,9 @@ header {
     filter: brightness(1.2);
 }
 .returnBtn {
-    margin-left: 6vh;
-    margin-top: 6vh;
+    position: fixed;
+    top: 140px;
+    left: 40px;
     cursor: pointer;
     display: flex;
     background: linear-gradient(#250000, #450000);
@@ -156,6 +162,7 @@ header {
     font-weight: 700;
     font-style: italic;
     transition: transform 0.1s ease;
+    margin-right: auto;
 }
 
 .returnBtn:hover {
@@ -177,14 +184,14 @@ header {
 }
 .categoryBtn {
     cursor: pointer;
-    background: linear-gradient(to left, #3A0101, #550000);
-    width: 100%;
-    max-width: 600px;
-    min-width: 300px;
-    height: 100%;
+    background: linear-gradient(to left, #2e0000, #460000);
+    width: 350px;
+    max-width: 500px;
+    min-width: 200px;
+    height: 80px;
     min-height: 120px;
     border-radius: 20px;
-    border: 4px solid;
+    border: 3px solid;
     justify-content: center;
     align-items: center;
     color: #B4B4B4;
@@ -227,4 +234,245 @@ header {
     max-height: 400px;  /* Max 80% of viewport height */
     height: 50%;
     box-shadow: 0 0 30px rgba(175, 0, 0, 0.5);
+}
+.modeTitle {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 24px;
+    color: #898989;
+    font-style: italic;
+    font-weight: 700;
+}
+.wikiModeSelection {
+    display: flex;
+    flex-direction: row;
+    gap: 10vh;
+    justify-content: center;
+    margin: 5vh;
+}
+.wikiModeBlock {
+    background-color: linear-gradient(#AF0000, #550000);
+    width: 360px;
+    height: 600px;
+    border: solid #D40000;
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+    border-radius: 40px;
+    transition: transform 0.2s ease;
+    justify-content: center;
+    text-align: center;
+    .wikiModeImage {
+        border: #720000 solid;
+        border-radius: 15px;
+        min-width: 160px;
+        min-height: 100px;
+        width: 350px;
+        height: 200px;
+        max-width: 400px;
+    }
+}
+.wikiModeBlock:hover {
+    transform: scale(1.02);
+}
+
+.wikiModeMoreBtn {
+    cursor: pointer;
+    width: 320px;
+    height: 60px;
+    background: linear-gradient(#500000, #2b0000);
+    border-radius: 15px;
+    border: solid #a30000;
+    margin-bottom: 15px;
+    color: #898989;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+.wikiModeMoreBtn:hover{
+    transform: scale(1.05);
+    filter: brightness(1.15)
+}
+.filterButton {
+    cursor: pointer;
+    margin-top: 4vh;
+    background: linear-gradient(#250000, #450000);
+    width: 280px;
+    height: 50px;
+    border-radius: 20px;
+    border: 3px solid;
+    justify-content: center;
+    align-items: center;
+    color: #B4B4B4;
+    border-color: #8C0000;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: left;
+}
+
+
+.filterSearchBar { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(#450000, #250000);
+    width: 550px;
+    height: 50px;
+    border: 4px solid;
+    border-color: #8C0000;
+    border-radius: 15px;
+    color: #898989;
+    padding: 6px;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 4vh;
+    .searchIconFilter {
+        height: 45px;
+        width: 45px;
+        align-self: center;
+        transition: filter 0.1s ease;
+    }
+    .searchIconFilter:hover {
+        filter: brightness(1.2);
+        cursor: pointer;
+    }
+
+}
+.characterPageContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20vh;
+    max-width: 100%;
+    min-height: calc(100vh - 300px);
+}
+
+.characterListWrapper {
+    width: 350px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #8C0000;
+    padding-right: 20px;
+}
+
+.characterList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 15px;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #8C0000 #250000;
+    height: 550px;
+    padding-top: 240px;
+    padding-bottom: 240px;
+    scroll-snap-type: y mandatory;
+}
+
+.characterList::-webkit-scrollbar {
+    width: 8px;
+}
+
+.characterList::-webkit-scrollbar-track {
+    background: #250000;
+    border-radius: 10px;
+}
+
+.characterList::-webkit-scrollbar-thumb {
+    background: #8C0000;
+    border-radius: 10px;
+}
+
+.characterList::-webkit-scrollbar-thumb:hover {
+    background: #B4B4B4;
+}
+
+.listElement {
+    display: flex;
+    background: linear-gradient(#250000, #450000);
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    border: 3px solid;
+    color: #898989;
+    border-color: #8C0000;
+    border-radius: 15px;
+    width: 300px;
+    height: 70px;
+    font-size: 16px;
+    font-style: italic;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    opacity: 0.4;
+    transform: scale(0.8);
+    transform-origin: left center;
+    cursor: default;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.characterInfoBlock {
+    display: grid;
+    grid-template-columns: auto 300px;
+    min-width: 300px;
+    height: 600px;
+    width: 1200px;
+    max-width: 1200px;
+    background: linear-gradient(#3f0000, #180000);
+    border-radius: 20px;
+    border: 3px solid #8C0000;
+    overflow-y: auto;
+    margin-left: 20px;
+    max-height: 1000px;
+}
+.charInfoSidebar {
+    background: black;
+    color: #B4B4B4;
+    display: grid;
+    height: 600px;
+    width: 100%;
+    max-width: 100%;
+    border: solid #D40000;
+    border-radius: 20px;
+    justify-self: end;
+}
+.charInfoSidebarImg {
+    border-radius: 20px;
+}
+.charInfoSidebarName {
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    color: #B4B4B4;
+    text-align: center;
+}
+.charInfoDescription {
+    padding: 20px;
+    color: #B4B4B4;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 30px;
+    text-align: justify;
+}
+.infoHeader {
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+    color: #B4B4B4;
+    margin-bottom: 30px;
+    -webkit-text-stroke: 2px #AF0000;
+}
+
+.infoContent {
+    color: #B4B4B4;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 30px;
+    text-align: justify;
 }
